@@ -19,6 +19,7 @@ A very basic calculator implemented in **x86-64 assembly**. It performs the four
 - `soustraction.asm` – Subtraction routine
 - `multiplication.asm` – Multiplication routine
 - `division.asm` – Division routine
+- `square.asm`-- square routine
 - `main.c` – Main program in C
 -  `prog`  – is pre-compiled program 
 
@@ -33,10 +34,11 @@ nasm -f elf64 addition.asm -o addition.o
 nasm -f elf64 soustraction.asm -o soustraction.o
 nasm -f elf64 multiplication.asm -o multiplication.o
 nasm -f elf64 division.asm -o division.o
+nasm -f elf64 square.asm -o square.o   
 ```
 
 ### 2. Compile and link the C main program with the assembly object files using GCC
 
 ```bash
-gcc -fPIE main.c addition.o soustraction.o multiplication.o division.o -no-pie -o calculator
+gcc -fPIE main.c addition.o soustraction.o multiplication.o division.o square.o -no-pie -o calculator
 ```
