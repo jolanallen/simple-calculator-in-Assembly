@@ -10,6 +10,7 @@ A very basic calculator implemented in **x86-64 assembly**. It performs the four
 - Subtraction
 - Multiplication
 - Division
+- square
 - Calls assembly functions from C
 ---
 
